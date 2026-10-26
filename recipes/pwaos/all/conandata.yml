@@ -1,0 +1,14 @@
+sources:
+  "0.2.a":
+    # Official release asset: tag v0.2.a of the upstream pwaos repository.
+    # One entry per os/arch (openjdk style); add windows/android artifacts
+    # when upstream publishes them.
+    Linux_x86_64:
+      # Mirrors are tried in order; every entry's sha256 is mandatory, so the
+      # artifact is verified regardless of which mirror served it. Drop the
+      # file:// mirror if you do not want it; CI with normal connectivity only
+      # needs the GitHub URL.
+      - url: "https://github.com/daqingzd/pwaos/releases/download/v0.2.a/pwaos_sdk-linux-x64-v0.2.a.0.7z"
+        sha256: "6f2be4a755dc774d0ac33801c6cc237e6de6c2ecd9d88573ba5f0cbdad8a0aaf"
+      - url: "file:///workspace/pwaos_sdk-linux-x64-v0.2.a.0.7z"  # local mirror, same sha256
+        sha256: "6f2be4a755dc774d0ac33801c6cc237e6de6c2ecd9d88573ba5f0cbdad8a0aaf"
